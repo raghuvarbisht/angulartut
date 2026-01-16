@@ -1,0 +1,27 @@
+<main class="main">
+  <h1> My plan </h1>
+  {{title}}
+  x:{{ x}}
+  y:{{y}}
+  value of x+y {{ x + y}}
+  x greater y: {{x > y}}
+  
+  <!--you can not do below action 
+  
+  {{ x = 10}}
+   {{ x++}}
+    {{x--}}
+  
+  using interpolation-->
+</main>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<router-outlet />
