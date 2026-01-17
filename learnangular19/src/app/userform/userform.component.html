@@ -1,0 +1,19 @@
+<h1>userform works!</h1>
+<div>
+Name:
+<input 
+    type="text" 
+    name="username"
+    (input)="handleEvent($event)"
+/>
+
+Address: <input type="text" name="address" 
+(input)="handleAddress($any($event.target).value)" 
+/>
+<div>
+    Name: {{name}} <br/>
+    Address: {{address}}<br/>
+</div>
+<button>Get user details</button>
+<button>Set user details</button>
+</div>

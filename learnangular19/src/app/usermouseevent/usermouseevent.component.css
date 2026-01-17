@@ -1,0 +1,17 @@
+.mouseover {
+    width: 200px;
+    background-color: rgb(49, 162, 233);
+    color: #fff;
+}
+
+.mouseleave {
+    width: 200px;
+    background-color: rgb(235, 158, 42);
+    color: #fff;
+}
+
+.mouseenter {
+    width: 200px;
+    background-color: rgb(35, 243, 146);
+    color: #fff;
+}
