@@ -1,0 +1,23 @@
+<p>signal works!</p>
+<h2>value of x : {{x}}</h2>
+<h2>value of signal : {{count()}}</h2>
+
+<button (click)="count.set(200)">Increse Signal </button>
+<button (click)="x = 500">Increse property </button>
+
+<button (click)="updateValue()">Increase x value</button>
+
+<button (click)="updateCount()">Increase Count</button>
+
+<h2>Writable signal </h2>
+<div>signal value: {{data()}}</div>
+<button (click)="updateSignal()">Update Signal</button>
+
+
+<h2>computed Signal Readonly </h2>
+computed value of Counter: {{counter()}}
+
+<h2>update compuited signal c value</h2>
+computed signal c value : {{c()}}
+<button (click)="showSignalValue()">Show Signal Value</button>
+<br />

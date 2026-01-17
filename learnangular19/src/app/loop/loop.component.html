@@ -1,0 +1,33 @@
+<p>loop works!</p>
+<h2>Users name</h2>
+@for(user of users; track user){
+    <h2>{{user}}</h2>
+}
+
+
+<h2>Student details</h2>
+<table class="table">
+ <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>City</th>
+</tr>   
+@for(student of students; track student; let id = $index) {
+    <tr>
+        <td>
+            <span>{{id + 1}}</span>
+        </td>
+        <td>
+            <span>{{student.name}}</span>
+        </td>
+        <td>
+            <span>{{student.age}}</span>
+        </td>
+        <td>
+            <span>{{student.city}}</span>
+        </td>        
+    </tr>
+}
+
+</table>

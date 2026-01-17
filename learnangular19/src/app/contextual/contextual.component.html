@@ -1,0 +1,10 @@
+<p>contextual works!</p>
+
+
+@for(user of users;; track user; ) {
+    <h1> index: {{$index}} first: {{$first}} last : {{$last}}  odd: {{$odd}} even: {{$even}}</h1>
+    <h1> user name {{user}}</h1>
+    @if($last){
+        <h2>total record {{$count}}</h2>
+    }
+}
