@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { RouterLink , Router} from '@angular/router';
 //RouterMOdule if you im0ort eroutermodule you dont need to include RouterLink 
 @Component({
   selector: 'app-home',
@@ -8,5 +8,10 @@ import { RouterLink } from '@angular/router';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  constructor(private router:Router){}
+
+  goToUserPage() {
+    this.router.navigate(['user'], {queryParams:{name: 'Raghuvar Visht'}});
+  }
 
 }
