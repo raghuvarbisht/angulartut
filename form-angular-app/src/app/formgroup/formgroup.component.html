@@ -1,0 +1,24 @@
+<p>formgroup works!</p>
+<h1>Form Group in Reactive Form</h1>
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+
+    <input type="text" placeholder="enter name" formControlName="name" />
+    <br /><br />
+
+    <input type="password" placeholder="enter password" formControlName="password" />
+    <br /><br />
+
+    <input type="text" placeholder="enter email" formControlName="email" />
+    <br /><br />
+
+    <button type="submit">Submit</button>
+
+    form Data 
+    name: {{this.userForm.value.name}}
+    <br/>
+    password: {{this.userForm.value.password}}
+    <br />
+    email: {{this.userForm.value.email}}
+    <br />
+</form>
