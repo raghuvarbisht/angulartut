@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 //import { SignalComponent } from './signal/signal.component';
-import { EffectComponent } from './effect/effect.component';
-import { ContextualComponent } from './contextual/contextual.component';
-import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
+// import { EffectComponent } from './effect/effect.component';
+// import { ContextualComponent } from './contextual/contextual.component';
+// import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
+import { DirectivesComponent } from './directives/directives.component';
 // import { SignupComponent } from './signup/signup.component';
 // import { ProfileComponent } from './profile/profile.component';
 // import { CounterComponent } from './counter/counter.component';
@@ -25,9 +26,10 @@ LoginComponent,
 // ControlflowifelseComponent,
 // LoopComponent,
 //SignalComponent,
-EffectComponent,
-ContextualComponent,
-TwowaybindingComponent
+//EffectComponent,
+//ContextualComponent,
+//TwowaybindingComponent,
+DirectivesComponent
 
 ],
   templateUrl: './app.component.html',

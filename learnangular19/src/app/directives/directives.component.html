@@ -1,0 +1,40 @@
+<p>directives works!</p>
+
+<h1>*ngIf directive</h1>
+<button (click)="toggle()">Toggle</button>
+
+<div *ngIf="visible; else elseBlock">
+    ng if content visible
+</div>
+<div> this is userdata</div>
+<ng-template #elseBlock>
+   <div> ng else content visible</div>
+</ng-template>
+
+
+
+<h1>*ngFor directive</h1>
+<h2>User Data</h2>
+<div *ngFor="let user of users">
+    <div>name: {{user}}</div>
+</div>
+<h2>Students data</h2>
+<div *ngFor="let student of students">
+    name: {{student.name}} age: {{student.age}}
+</div>
+
+
+
+<h2>ngSwitch</h2>
+<button (click)="updateColor('red')">Red</button>
+<button (click)="updateColor('green')">Green</button>
+<button (click)="updateColor('yellow')">Yellow</button>
+<button (click)="updateColor('blue')">Blue</button>
+
+<div [ngSwitch]="color">
+    <h2 *ngSwitchCase="'red'" style="background-color: red;color:white;"> Red Color</h2>
+    <h2 *ngSwitchCase="'green'" style="background-color: green;color:white;"> Green Color</h2>
+    <h2 *ngSwitchCase="'yellow'" style="background-color: yellow;color:black;"> Yellow Color</h2>
+    <h2 *ngSwitchDefault style="background-color: blue;color:white;"> Blue Color</h2>
+    
+</div>
