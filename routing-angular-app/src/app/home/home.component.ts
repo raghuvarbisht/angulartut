@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-
+import { RouterLink } from '@angular/router';
+//RouterMOdule if you im0ort eroutermodule you dont need to include RouterLink 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
